@@ -14,6 +14,8 @@ app.use(cors());
 app.use(bodyParser.json());
 
 //Get
+app.get('/' , (req,res) => res.send("<h1>Doctor's Portal Backend Server>"))
+
 app.get('/schedules', (req, res) => {
     client.connect(err => {
         const collection = client.db("doctors-portal").collection("schedules");
