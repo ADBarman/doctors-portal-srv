@@ -14,7 +14,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 //Get
-app.get('/' , (req,res) => res.send("<h1>Doctor's Portal Backend Server</h1>"))
+app.get('/' , (req,res) => res.send("<h1><center>Doctor's Portal Backend Server</center></h1>"))
 
 app.get('/schedules', (req, res) => {
     client.connect(err => {
